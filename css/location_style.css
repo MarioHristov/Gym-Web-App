@@ -1,0 +1,442 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+:root {
+    --circle: "M40 80C50.6087 80 60.7828 75.7857 68.2843 68.2843C75.7857 60.7828 80 50.6087 80 40C80 29.3913 75.7857 19.2172 68.2843 11.7157C60.7828 4.21427 50.6087 0 40 0C29.3913 0 19.2172 4.21427 11.7157 11.7157C4.21427 19.2172 0 29.3913 0 40C0 50.6087 4.21427 60.7828 11.7157 68.2843C19.2172 75.7857 29.3913 80 40 80Z"
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+    /* Chrome, Safari, and Opera */
+}
+
+#page-content {
+    position: relative;
+    width: 80vw;
+    margin: 20px auto 20px auto;
+}
+
+.inner-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80vh;
+}
+
+.inner-box div {
+    width: 15vw;
+    height: 120px;
+    margin: 10px 0 20px 0;
+    padding: 0 15px;
+    height: fit-content;
+}
+
+.inner-box div h6 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 10px 0 15px 0;
+    text-transform: capitalize;
+}
+
+.inner-box div span {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.left-side {
+    flex-basis: 80%;
+}
+
+.right-side {
+    flex-basis: 20%;
+    padding: 40px 10px 0 10px;
+}
+
+.usefull-info-box {
+    width: 100%;
+}
+
+.gibberish-box {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gibberish-box p {
+    padding: 0px 20px 0 20px;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+.inner-page-content {
+    width: 100%;
+    display: flex;
+}
+
+.gibberish-box h1 {
+    font-size: 38px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+a div.content-box.btn {
+    padding: 10px 15px;
+    background-color: black;
+    border: 2px solid rgb(210, 210, 210);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a div.content-box.btn:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+.usefull-info-box h3 {
+    margin-top: 0px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.right-side>a {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    color: #F8F6F0;
+    background-color: black;
+}
+
+a div.content-box.btn i {
+    position: absolute;
+    left: 78vw;
+    transform: translate(-90%, 5px);
+    font-size: 22px;
+
+}
+
+div.content-box:not(.btn) {
+    margin: 40px 0 40px 0;
+    background-color: rgb(220, 220, 220);
+    min-height: 120px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.content-box h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin: 5px 0 5px 0;
+}
+
+.content-box p:nth-of-type(1) {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 22px;
+    margin: 15px 0 10px 0;
+}
+
+.content-box p.mail {
+
+    margin: 15px 0 10px 0;
+}
+
+.content-box p.mail a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+
+#gallery-link .content-box.btn {
+    margin-top: 20px;
+}
+
+.other-facilities,
+.grupovi-zanimania {
+    background-color: rgb(200, 200, 200);
+    padding: 20px 0 20px 0;
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+}
+
+.other-facilities {
+    border-radius: 10px 10px 0 0;
+}
+
+.facilites-text-container {
+    flex-basis: 30%;
+}
+
+.facilites-text-container h1 {
+
+    margin: 0 0 60px 0;
+
+    vertical-align: text-top;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 38px;
+}
+
+.facilities-container {
+    margin-top: 10px;
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.facility-container {
+    display: flex;
+}
+
+.facility-container i {
+    font-size: 20px;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.facility-container span,
+.facility-container a {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    flex-basis: 80%;
+    text-decoration: none;
+    color: black;
+}
+
+.facility-container a {
+    text-transform: uppercase;
+}
+
+#border1 {
+    width: 80vw;
+    height: 5px;
+    background-color: rgb(210, 210, 210);
+}
+
+.facility-container .link-container {
+    flex-basis: 60%;
+}
+
+.facility-container .link-container a {
+    height: fit-content;
+}
+
+.facility-container .img-container {
+    flex-basis: 40%;
+}
+
+.img-container {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    clip-path: path(var(--circle));
+    margin: 15px;
+}
+
+.img-container #calisthenics {
+    width: 130px;
+    position: absolute;
+    transform: translate(-20%, -15%);
+}
+
+.img-container #leg_shredding {
+    width: 130px;
+    position: absolute;
+    transform: translate(-20%, -3%);
+}
+
+.img-container #arm_wrestling {
+    width: 130px;
+    position: absolute;
+    transform: translate(-12%, -8%);
+}
+
+.img-container #flexiblility {
+    width: 125px;
+    position: absolute;
+    transform: translate(-35%, -40%);
+}
+
+.img-container #powerlifting {
+    width: 100px;
+    position: absolute;
+    transform: translate(-10%, 0);
+}
+
+.img-container #yoga-icon {
+    width: 130px;
+    position: absolute;
+    transform: translate(-20%, -20%);
+}
+
+.img-container #philosophy_of_bodybuilding {
+    width: 100px;
+    position: absolute;
+    transform: translate(-5%, 0);
+}
+
+.img-container #mma {
+    width: 160px;
+    position: absolute;
+    transform: translate(-30%, 0);
+}
+
+.img-container #climbing {
+    width: 120px;
+    position: absolute;
+    transform: translate(0, -15%);
+}
+
+#gallery {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    max-width: 80vw;
+}
+
+.img-card {
+    width: 33%;
+    height: calc((100vw - 100vw*0.2 - 100vw*0.0163)/9);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1);
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+#gallery .img-card.focus {
+    z-index: 2;
+    transform: scale(1.3);
+}
+
+#gallery .img-card:nth-child(2) {
+    margin-left: 1.63%;
+    margin-right: 1.63%;
+}
+
+.img-card img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(0, -30%);
+}
+
+.img-card:empty {
+    display: none;
+}
+
+
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Style for the modal image */
+.modal-image {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+    transform: translate(0, 10%);
+}
+
+/* Style for the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.fa-chevron-right {
+    right: 0;
+}
+
+#previous-button,
+#next-button {
+    padding: 5px 15px 5px 15px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(180, 180, 180);
+    width: fit-content;
+    cursor: pointer;
+}
+
+.img-buttons-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#previous-button.disabled,
+#next-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f1f1f1;
+    color: #999999;
+}
+
+.gallery-text {
+    vertical-align: text-top;
+    background-color: rgb(200, 200, 200);
+    border-radius: 0 0 10px 10px;
+    margin: 0px;
+    padding: 20px 0 20px 0;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-top: 5px solid rgb(210, 210, 210);
+    text-align: center;
+}

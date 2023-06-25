@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+#map {
+  position: relative;
+  width: 90vw;
+  height: 70vh;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin:0 auto 130px auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+  /* Chrome, Safari, and Opera */
+}
+.card {
+  font-family: 'DM Sans', sans-serif;
+  width: fit-content;
+  height: fit-content;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.gm-style-iw button {
+  display: none !important;
+}
+.locations-container{
+  width: 80vw;
+  margin: 0 auto 20px auto;
+}
+.locations-container h1, .location h2{
+  font-family: 'DM Sans', sans-serif;
+}
+.locations-container h1{
+  color: rgb(7, 42, 108);
+  font-size:40px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-transform:uppercase;
+}
+.location{
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+.location h2{
+  color: rgb(7, 42, 108);
+  font-size: 28px;
+}
+.location-details{
+  display: inline-block;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width:50%;
+  height:auto;
+  margin: 0;
+}
+.body-container{
+  width:100%;
+  height:100px;
+  padding-bottom: 10px;
+}
+.location-details p span{
+  text-decoration: underline;
+  font-weight: 600;
+}
+.location-details p{
+  margin:5px auto 20px auto;
+}
+.working-hours{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 25%;
+  margin: 0;
+  display: inline-block;
+
+}
+.working-hours p{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  float:left;
+}
+.buttons{
+  width: 15%;
+  display: inline-block;
+  float: right;
+}
+.buttons a{
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+  border: 3px solid rgb(138, 135, 135);
+  padding:3px 10px 3px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: black;
+  color: #F8F6F0;
+  font-size: 18px;
+}
+.buttons a:first-child{
+  margin: 10px auto 10px auto;
+}

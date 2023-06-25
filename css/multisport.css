@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+body {
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+    /* Chrome, Safari, and Opera */
+}
+
+.multisport-container {
+    margin: 250px auto 250px auto;
+    width: 50vw;
+}
+
+.multisport-container h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.multisport-container p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0 15px 0;
+}
+
+.multisport-container p a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border: 2px solid rgb(131, 130, 130);
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    background-color: black;
+}
+
+.multisport-container p:has(a) {
+    margin: 30px 0 0 0;
+}
+
+.img-container {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translateX(170%) translateY(25px) translateZ(0px) skewX(0deg) skewY(0deg) translateY(-5vh);
+    top:35%;
+    left:38%;
+}
+
+.img-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+@media screen and (max-width: 1070px) {
+    .img-container{
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translateX(50%) translateY(25px) translateZ(0px) skewX(0deg) skewY(0deg) translateY(-5vh);
+        left:65%;
+        top:40%;
+        width:200px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .img-container{
+        display: none;
+    }
+}
