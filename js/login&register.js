@@ -38,3 +38,33 @@ for (let i = 0; i < passwordCheckboxes.length; i++) {
     }
   });
 }
+document.getElementById('register-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  submitData(new FormData(event.target));
+});
+document.getElementById('login-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  submitData(new FormData(event.target));
+});
+
+function submitData(formData){
+  var jsonData = {};
+    formData.forEach(function(value, key) {
+      jsonData[key] = value;
+    });
+    var apiUrl = 'https://api.example.com/endpoint'; // Replace with your API endpoint
+    fetch(apiUrl, {
+      method: 'POST',
+      body: JSON.stringify(jsonData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(function(response) {
+      console.log(response);
+    })
+    .catch(function(error) {
+      // Handle error
+      console.error('Error:', error);
+    });
+}
