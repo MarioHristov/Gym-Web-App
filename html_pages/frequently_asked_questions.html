@@ -9,36 +9,12 @@
     <link rel="stylesheet" href="/GymWebApp/css/navbar.css">
     <link rel="stylesheet" href="/GymWebApp/css/footer.css">
     <link rel="stylesheet" href="/GymWebApp/css/frequently_asked_questions.css">
+    <script src="/GymWebApp/js/common.js"> </script>
 </head>
 
-<body>
-    <header>
-        <div class="container">
-            <a class="logo" href="landing_page.html">
-                <img src="/GymWebApp/gym_web_app_photos\logo.png" alt="logo">
-            </a>
-            <nav>
-                <div class="menu-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <ul class="nav-menu">
-                    <li>
-                        <a href="/GymWebApp/html_pages/locations.html">Locations</a>
-                    </li>
-                    <li>
-                        <a href="/GymWebApp/html_pages/memberships.html">Memberships</a>
-                    </li>
-                    <li>
-                        <a href="/GymWebApp/html_pages/activities&events.html">Activities and events</a>
-                    </li>
-                    <li>
-                        <a href="/GymWebApp/html_pages/login&register.html">Create a profile</a>
-                    </li>
-                </ul>
-            </nav>
+<body onload="callFunctions(includeNavBar, includeFooter)">
 
-        </div>
-    </header>
+    <div id="navbar-container"></div>
     <div class="question-container">
         <h1>Frequently asked questions</h1>
         <h2>General questions</h2>
@@ -155,65 +131,10 @@
             </li>
         </ul>
     </div>
+    <div id="footer-container"></div>
 
-    <footer>
-        <div class="footer-container">
-            <h4>About us</h4>
-            <ul>
-                <li>
-                    <a href="/GymWebApp/html_pages/documentation.html">Programmers Documentation</a>
-                </li>
-                <li>
-                    <a href="/GymWebApp/html_pages/legal_documents.html">Legal documents</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-container">
-            <h4>Information</h4>
-            <ul>
-                <li class="ul-items">
-                    <a href="/GymWebApp/html_pages/frequently_asked_questions.html">Regularly asked questions</a>
-                </li>
-                <li class="ul-items">
-                    <a href="/GymWebApp/html_pages/gym_ethics.html">The gym ethics</a>
-                </li>
-                <li class="ul-items">
-                    <a href="/GymWebApp/html_pages/profile_creation.html">How to create a profile</a>
-                </li>
-                <li class="ul-items">
-                    <a href="/GymWebApp/html_pages/multisport.html">Have a MultiSport card?</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-container">
-            <h4>Our socials</h4>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/">
-                        <i class="fa-brands fa-instagram fa-2xl"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/">
-                        <i class="fa-brands fa-facebook fa-2xl"></i>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/">
-                        <i class="fa-brands fa-tiktok fa-2xl"></i>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/">
-                        <i class="fa-brands fa-youtube fa-2xl"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
     <script src="/GymWebApp/js/frequently_asked_questions.js"></script>
+    <script src="/GymWebApp/js/include_layout.js"> </script>
 </body>
 
 </html>

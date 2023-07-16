@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shredded Together</title>
+    <script>
+        if (localStorage.getItem('jwtLoginToken')) 
+        {
+            window.location.href = '/GymWebApp/html_pages/logged_user.html';
+        }
+    </script>
     <link rel="stylesheet" href="/GymWebApp/css/landing_page.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
