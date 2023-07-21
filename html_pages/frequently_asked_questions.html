@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
+    <base href="http://localhost:8080">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently asked questions</title>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/frequently_asked_questions.css">
+    <link rel="stylesheet" href="/GymWebApp/css/navbar.css">
+    <link rel="stylesheet" href="/GymWebApp/css/footer.css">
+    <link rel="stylesheet" href="/GymWebApp/css/frequently_asked_questions.css">
+    <script src="/GymWebApp/js/common.js"> </script>
 </head>
 
+<<<<<<< HEAD
 <body>
     <header>
         <div class="container">
@@ -35,9 +38,11 @@
                     </li>
                 </ul>
             </nav>
+=======
+<body onload="callFunctions(includeNavBar, includeFooter)">
+>>>>>>> 7f83e53806defabf47f97617a0503f5afcfa2a40
 
-        </div>
-    </header>
+    <div id="navbar-container"></div>
     <div class="question-container">
         <h1>Frequently asked questions</h1>
         <h2>General questions</h2>
@@ -81,7 +86,7 @@
                     <p>Yes. All activities organized by the gym itself have a person limit so you must book your place
                         before you go to the activity. For events hosted by us or by users there may or may not be a
                         limit, so you must check before you plan on participating. View more information about events <a
-                            href="events_details.html">here</a>.</p>
+                            href="/GymWebApp/html_pages/events_details.html">here</a>.</p>
                 </div>
             </li>
         </ul>
@@ -128,7 +133,11 @@
                     <p>Are there any perks to purchasing a more expensive membership?</p>
                 </div>
                 <div class="question-answer" id="answer-8">
+<<<<<<< HEAD
                     <p>Yes. You can view them onto the memberships page <a href="/html_pages/memberships.html">here</a>.</p>
+=======
+                    <p>Yes. You can view them onto the memberships page <a href="/GymWebApp/html_pages/memberships.html">here</a>.</p>
+>>>>>>> 7f83e53806defabf47f97617a0503f5afcfa2a40
                 </div>
             </li>
             <li>
@@ -139,7 +148,7 @@
                 <div class="question-answer" id="answer-9">
                     <p>Some of the events we host are members only.<br><b>For example:</b> group trips, competitions
                         (powerlifting, bodybuilding, gripMania, climbersParadice and many more), special public events.
-                        You can learn more about the events we host <a href="events_details.html">here</a>.</p>
+                        You can learn more about the events we host <a href="/GymWebApp/html_pages/events_details.html">here</a>.</p>
                 </div>
             </li>
             <li>
@@ -149,12 +158,18 @@
                 </div>
                 <div class="question-answer" id="answer-10">
                     <p>Yes. Memberships can be renewed, upgraded, purchased online through our website. You can view
+<<<<<<< HEAD
                         your membership details on your profile page <a href="/html_pages/login&register.html">here</a>.</p>
+=======
+                        your membership details on your profile page <a href="/GymWebApp/html_pages/login&register.html">here</a>.</p>
+>>>>>>> 7f83e53806defabf47f97617a0503f5afcfa2a40
                 </div>
             </li>
         </ul>
     </div>
+    <div id="footer-container"></div>
 
+<<<<<<< HEAD
     <footer>
         <div class="footer-container">
             <h4>About us</h4>
@@ -213,6 +228,10 @@
         </div>
     </footer>
     <script src="../js/frequently_asked_questions.js"></script>
+=======
+    <script src="/GymWebApp/js/frequently_asked_questions.js"></script>
+    <script src="/GymWebApp/js/include_layout.js"> </script>
+>>>>>>> 7f83e53806defabf47f97617a0503f5afcfa2a40
 </body>
 
 </html>
