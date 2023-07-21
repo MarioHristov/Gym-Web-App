@@ -1,9 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "^/$",
-        "destination": "/html_pages/landing_page.html",
-        "status": 200
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/path/to/subdirectory/index.html"
+    }
+  ]
+}
