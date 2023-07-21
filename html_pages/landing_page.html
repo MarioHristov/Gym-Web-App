@@ -13,37 +13,9 @@
     </script>
     <link rel="stylesheet" href="/css/landing_page.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <script src="/js/common.js"> </script>
 </head>
-<body> 
-    <header>
-       
-        <div class="container"> 
-            <a class="logo" href="/html_pages/landing_page.html">
-                <img src="/gym_web_app_photos/logo.png" alt="logo">
-            </a>
-            <nav>
-                <div class="menu-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <ul class="nav-menu">
-                    <li>
-                        <a href="/html_pages/locations.html">Locations</a>
-                    </li>
-                    <li>
-                        <a href="/html_pages/memberships.html">Memberships</a>
-                    </li>
-                    <li>
-                        <a href="/html_pages/activities&events.html">Activities and events</a>
-                    </li>
-                    <li>
-                        <a href="/html_pages/login&register.html">Create a profile</a>
-                    </li>
-                </ul>
-            </nav>
-            
-        </div>
-    </header>
+<body onload="callFunctions(includeNavBar, includeFooter)"> 
     <div class="wrap">
             <div class="background-image"></div>
         <div class="text-content">
@@ -97,63 +69,7 @@
             
         </div>
     </div>
-    <footer>
-        <div class="footer-container">
-            <h4>About us</h4>
-            <ul>
-                <li>
-                    <a href="/html_pages/documentation.html">Programmers Documentation</a>
-                </li>
-                <li>
-                    <a href="/html_pages/legal_documents.html">Legal documents</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-container">
-            <h4>Information</h4>
-            <ul>
-                <li class="ul-items">
-                    <a href="/html_pages/frequently_asked_questions.html">Regularly asked questions</a>
-                </li>
-                <li class="ul-items">
-                    <a href="/html_pages/gym_ethics.html">The gym ethics</a>
-                </li>
-                <li class="ul-items">
-                    <a href="/html_pages/profile_creation.html">How to create a profile</a>
-                </li>
-                <li class="ul-items">
-                    <a href="/html_pages/multisport.html">Have a MultiSport card?</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-container">
-            <h4>Our socials</h4>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/">
-                        <i class="fa-brands fa-instagram fa-2xl"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/">
-                        <i class="fa-brands fa-facebook fa-2xl"></i>
-                    </a>
-                    
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/">
-                        <i class="fa-brands fa-tiktok fa-2xl"></i>
-                    </a>
-                    
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/" >
-                       <i class="fa-brands fa-youtube fa-2xl"></i>
-                    </a> 
-                </li>
-            </ul>
-        </div>
-    </footer>
+    <script src="/js/include_layout.js"> </script>
     <script src="/js/landing_page.js"></script>
 </body>
 </html>
