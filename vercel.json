@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "^/$",
+        "destination": "/html_pages/landing_page.html",
+        "status": 200
+      }
+    ]
+  }
