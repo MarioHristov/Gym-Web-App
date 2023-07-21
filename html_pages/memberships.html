@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="http://localhost:8080">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships</title>
+    <link rel="stylesheet" href="GymWebApp/css/navbar.css">
+    <link rel="stylesheet" href="GymWebApp/css/footer.css">
+    <link rel="stylesheet" href="GymWebApp/css/memberships.css">
+    <script src="/GymWebApp/js/common.js"> </script>
+</head>
+<body onload="callFunctions(includeNavBar, includeFooter)">
+
+    <div id="navbar-container"></div>
+
+    <div class="memberships-container">
+        <h3>Choose your membership today!</h3>
+        <ul class="content-ul">
+            <li>
+                <a id="1" href="/GymWebApp/html_pages/memberships.html#1" onclick="showDiv('standard')">Standard</a>
+            </li>
+            <li>
+                <a id="2" href="/GymWebApp/html_pages/memberships.html#2" onclick="showDiv('premium')">Premium</a>
+            </li>
+            <li>
+                <a id="3"href="/GymWebApp/html_pages/memberships.html#3"  onclick="showDiv('diamond')">Diamond</a>
+            </li>
+        </ul>
+       
+     
+
+        <div id="standard">
+            <div class="membership-card">
+                <h1>Monthly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>80</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price" style="text-decoration: none; color:black; font-weight: 500;">$960</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+            <div class="membership-card">
+                <h1>Trimonthly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>65</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price">$960</span>
+                    <span class="discount-price">$780</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+            <div class="membership-card">
+                <h1>Yearly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>40</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price">$960</span>
+                    <span class="discount-price">$480</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+        </div>
+
+        <div id="premium">
+            <div class="membership-card">
+                <h1>Monthly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>120</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price" style="text-decoration: none; color:black; font-weight: 500;">$1440</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+            <div class="membership-card">
+                <h1>Trimonthly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>105</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price">$1440</span>
+                    <span class="discount-price">$1260</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+            <div class="membership-card">
+                <h1>Yearly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>90</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price">$1440</span>
+                    <span class="discount-price">$1080</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-xmark" style="color: #ff8787;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+        </div>
+
+        <div id="diamond">
+            <div class="membership-card">
+                <h1>Monthly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>200</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price" style="text-decoration: none; color:black; font-weight: 500;">$2400</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+            <div class="membership-card">
+                <h1>Trimonthly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>180</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price">$2400</span>
+                    <span class="discount-price">$2160</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+            <div class="membership-card">
+                <h1>Yearly</h1>
+                <div class="cost">
+                    <div class="symbol">$</div>
+                    <span>160</span>
+                    <div class="month">/ Month</div>
+                </div>
+                <div class="total-price">
+                    <span class="normal-price">$2400</span>
+                    <span class="discount-price">$1920</span>
+                    <span class="yearly-text">Billed yearly</span>
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-check" style="color: #87ffa5;"></i>
+                        <span>Text</span>
+                    </div>
+                </div>
+                <button class="purchase-button">Purchase now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="/GymWebApp/js/include_layout.js"> </script>
+    <script src="/GymWebApp/js/memberships.js"></script>
+</body>
+</html>

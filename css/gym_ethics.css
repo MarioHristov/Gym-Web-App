@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+body {
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+    /* Chrome, Safari, and Opera */
+}
+.ethics-container {
+    width: fit-content;
+    padding: 0 15px 0 15px;
+    margin: 200px auto 200px auto;
+}
+
+.ethics-container h1,
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    line-height: 1.3;
+    margin: 50px 0 25px 0;
+}
+
+.ethics-container h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.ethics-container h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.ethics-container ol {
+    max-width: 1200px;
+    columns: 350px 3;
+    column-gap: 50px;
+}
+
+.ethics-container ol li {
+    line-height: 1.5;
+    padding: 5px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}

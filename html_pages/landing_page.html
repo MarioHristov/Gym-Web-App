@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="http://localhost:8080">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shredded Together</title>
-    <link rel="stylesheet" href="..\css\landing_page.css"/>
+    <script>
+        if (localStorage.getItem('jwtLoginToken')) 
+        {
+            window.location.href = '/GymWebApp/html_pages/logged_user.html';
+        }
+    </script>
+    <link rel="stylesheet" href="/GymWebApp/css/landing_page.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 </head>
 <body> 
     <header>
        
         <div class="container"> 
-            <a class="logo" href="landing_page.html">
-                <img src="..\gym_web_app_photos\logo.png" alt="logo">
+            <a class="logo" href="/GymWebApp/html_pages/landing_page.html">
+                <img src="/GymWebApp/gym_web_app_photos/logo.png" alt="logo">
             </a>
             <nav>
                 <div class="menu-icon">
@@ -20,16 +28,16 @@
                 </div>
                 <ul class="nav-menu">
                     <li>
-                        <a href="locations.html">Locations</a>
+                        <a href="/GymWebApp/html_pages/locations.html">Locations</a>
                     </li>
                     <li>
-                        <a href="memberships.html">Memberships</a>
+                        <a href="/GymWebApp/html_pages/memberships.html">Memberships</a>
                     </li>
                     <li>
-                        <a href="activities&events.html">Activities and events</a>
+                        <a href="/GymWebApp/html_pages/activities&events.html">Activities and events</a>
                     </li>
                     <li>
-                        <a href="login&register.html">Create a profile</a>
+                        <a href="/GymWebApp/html_pages/login&register.html">Create a profile</a>
                     </li>
                 </ul>
             </nav>
@@ -45,44 +53,44 @@
                 </div>
             </div>
             <div class="button-container">
-                <a href="login&register.html" class="join-button shadow-drop-2-br button-text">Join today</a>
+                <a href="/GymWebApp/html_pages/login&register.html" class="join-button shadow-drop-2-br button-text">Join today</a>
             </div>
             
         </div>
     </div>
     <div class="top-page">
-        <i class="fa-solid fa-circle-chevron-up fa-2xl"></i>
+        <i class="fa-solid fa-circle-chevron-up fa-2xl" id="top-page"></i>
     </div>
     <div class="benefits-container">
         <h2>Why choose us?</h2>
         <div>
             <div class="motivation-container">
-                <img src="../gym_web_app_photos/flex.png" style="width:4em; height:4em; color:white"alt="flex">
+                <img src="/GymWebApp/gym_web_app_photos/flex.png" style="width:4em; height:4em; color:white"alt="flex">
                 <h4>Motivating environment</h4>
                 <p>Even the ancient pranksters said that even if you end up in paradise, without the corresponding qualities, there is a danger that you will not like it there at all. And since the choice of a university is fundamental for the further development of a successful career, it is better that this choice be considered and adequate to your personal capabilities and the environment that welcomes you, right? </p>
             </div>
             <div class="equipment-container">
-                <img src="../gym_web_app_photos/dumbbell-solid.svg" style="width:4em; height:4em; color:white"alt="dumbbell">
+                <img src="/GymWebApp/gym_web_app_photos/dumbbell-solid.svg" style="width:4em; height:4em; color:white"alt="dumbbell">
                 <h4>The highest quality equipment</h4>
                 <p>Even the ancient pranksters said that even if you end up in paradise, without the corresponding qualities, there is a danger that you will not like it there at all. And since the choice of a university is fundamental for the further development of a successful career, it is better that this choice be considered and adequate to your personal capabilities and the environment that welcomes you, right? </p>
             </div>
             <div class="activities-container">
-                <img src="../gym_web_app_photos/person-swimming-solid.svg" style="width:4em; height:4em; color:white" alt="other activities">
+                <img src="/GymWebApp/gym_web_app_photos/person-swimming-solid.svg" style="width:4em; height:4em; color:white" alt="other activities">
                 <h4>It's more than a gym</h4>
                 <p>Even the ancient pranksters said that even if you end up in paradise, without the corresponding qualities, there is a danger that you will not like it there at all. And since the choice of a university is fundamental for the further development of a successful career, it is better that this choice be considered and adequate to your personal capabilities and the environment that welcomes you, right? </p>
             </div>
             <div class="parking-spaces-container">
-                <img src="../gym_web_app_photos/square-parking-solid.svg" style="width:4em; height:4em; color:white" alt="parking spaces">
+                <img src="/GymWebApp/gym_web_app_photos/square-parking-solid.svg" style="width:4em; height:4em; color:white" alt="parking spaces">
                 <h4>Parking spaces</h4>
                 <p>Even the ancient pranksters said that even if you end up in paradise, without the corresponding qualities, there is a danger that you will not like it there at all. And since the choice of a university is fundamental for the further development of a successful career, it is better that this choice be considered and adequate to your personal capabilities and the environment that welcomes you, right? </p>
             </div>
             <div class="events-container">
-                <img src="../gym_web_app_photos/calendar-days-solid.svg" style="width:4em; height:4em; color:white" alt="other activities">
+                <img src="/GymWebApp/gym_web_app_photos/calendar-days-solid.svg" style="width:4em; height:4em; color:white" alt="other activities">
                 <h4>Competitions & events</h4>
                 <p>Even the ancient pranksters said that even if you end up in paradise, without the corresponding qualities, there is a danger that you will not like it there at all. And since the choice of a university is fundamental for the further development of a successful career, it is better that this choice be considered and adequate to your personal capabilities and the environment that welcomes you, right? </p>
             </div>
             <div class="body-health-container">
-                <img src="../gym_web_app_photos/heart-pulse-solid.svg" style="width:4em; height:4em; color: #ffffff;" alt="other activities">
+                <img src="/GymWebApp/gym_web_app_photos/heart-pulse-solid.svg" style="width:4em; height:4em; color: #ffffff;" alt="other activities">
                 <h4>Treat yourself nicely</h4>
                 <p>Even the ancient pranksters said that even if you end up in paradise, without the corresponding qualities, there is a danger that you will not like it there at all. And since the choice of a university is fundamental for the further development of a successful career, it is better that this choice be considered and adequate to your personal capabilities and the environment that welcomes you, right? </p>
             </div>
@@ -94,10 +102,10 @@
             <h4>About us</h4>
             <ul>
                 <li>
-                    <a href="documentation.html">Programmers Documentation</a>
+                    <a href="/GymWebApp/html_pages/documentation.html">Programmers Documentation</a>
                 </li>
                 <li>
-                    <a href="legal_documents.html">Legal documents</a>
+                    <a href="/GymWebApp/html_pages/legal_documents.html">Legal documents</a>
                 </li>
             </ul>
         </div>
@@ -105,16 +113,16 @@
             <h4>Information</h4>
             <ul>
                 <li class="ul-items">
-                    <a href="frequently_asked_questions.html">Regularly asked questions</a>
+                    <a href="/GymWebApp/html_pages/frequently_asked_questions.html">Regularly asked questions</a>
                 </li>
                 <li class="ul-items">
-                    <a href="gym_ethics.html">The gym ethics</a>
+                    <a href="/GymWebApp/html_pages/gym_ethics.html">The gym ethics</a>
                 </li>
                 <li class="ul-items">
-                    <a href="profile_creation.html">How to create a profile</a>
+                    <a href="/GymWebApp/html_pages/profile_creation.html">How to create a profile</a>
                 </li>
                 <li class="ul-items">
-                    <a href="multisport.html">Have a MultiSport card?</a>
+                    <a href="/GymWebApp/html_pages/multisport.html">Have a MultiSport card?</a>
                 </li>
             </ul>
         </div>
@@ -146,6 +154,6 @@
             </ul>
         </div>
     </footer>
-
+    <script src="/GymWebApp/js/landing_page.js"></script>
 </body>
 </html>

@@ -1,4 +1,8 @@
-
+body::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+    /* Chrome, Safari, and Opera */
+}
 .outer-container, .footer-space{
     width:80vw;
     margin: 30px auto 0px auto;

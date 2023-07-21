@@ -28,7 +28,7 @@ function renderCalendar(calendar) {
   var html = '';
 
   html += '<table>';
-  let currentDateFull = currentDate.toString().padStart(2, '0') + '.' + (currentMonth + 1).toString().padStart(2, '0') + '.' + currentYear;
+  let currentDateFull = new Date().getDate().toString().padStart(2, '0') + '.' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '.' + new Date().getFullYear();
   html += `<tr><th>&nbsp</th><th><div meta:date = ${formattedDates[0]} ${formattedDates[0] === currentDateFull? 'class="current-date"' : '' }>Monday</div></th><th><div meta:date = ${formattedDates[1]} ${formattedDates[1] === currentDateFull? 'class="current-date"' : '' }>Tuesday</div></th><th><div meta:date = ${formattedDates[2] } ${formattedDates[2] === currentDateFull? 'class="current-date"' : '' }>Wednesday</div></th><th><div meta:date = ${formattedDates[3]} ${formattedDates[3] === currentDateFull? 'class="current-date"' : '' }>Thursday</div></th><th><div meta:date = ${formattedDates[4]} ${formattedDates[4] === currentDateFull? 'class="current-date"' : '' }>Friday</div></th><th><div meta:date = ${formattedDates[5]} ${formattedDates[5] === currentDateFull? 'class="current-date"' : '' }>Saturday</div></th><th><div meta:date = ${formattedDates[6]} ${formattedDates[6] === currentDateFull? 'class="current-date"' : '' }>Sunday</div></th></tr>`;
 
   for (var hour = 8; hour <= 22; hour++) {
@@ -82,6 +82,7 @@ function generateCalendar(month, year) {
   let offset = new Date(year, month, 1).getDay() === 1 ? 0: 7 - new Date(year, month, 1).getDay() + 1;
 
   console.log(currentWeek);
+
   let monthStartingDate = new Date(year, month, 1 + offset);
   let nextMonthFirstDay = new Date(year, month + 1, 1);
 
@@ -143,6 +144,7 @@ function nextWeek() {
   if (currentWeek > calendar.length - 1) {
     currentWeek = 0;
     currentMonth++;
+    
   }
   renderCalendar(generateCalendar(currentMonth, currentYear));
 }
@@ -151,8 +153,9 @@ function nextWeek() {
 function previousWeek() {
   currentWeek--;
   if (currentWeek < 0) {
-    currentWeek = 4;
     currentMonth--;
+    currentWeek = generateCalendar(currentMonth, currentYear).length - 1;
+    
   }
   renderCalendar(generateCalendar(currentMonth, currentYear));
 }
@@ -165,4 +168,7 @@ const previousButton = document.getElementById('previous-button');
 previousButton.addEventListener('click', previousWeek);
 
 // Initial calendar generation
-renderCalendar(generateCalendar(currentMonth, currentYear));
+document.addEventListener('DOMContentLoaded', function(){
+  console.log("?")
+  renderCalendar(generateCalendar(currentMonth, currentYear));
+});
