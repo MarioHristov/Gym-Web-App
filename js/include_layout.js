@@ -18,7 +18,7 @@ function includeLayout() {
         addScript('/js/gallery.js');
       }
     };
-    xmlhttp.open('GET', 'http://localhost:8080/html_pages/layouts/location_page_layout.html', true);
+    xmlhttp.open('GET', 'https://shreddedtogether.vercel.app/html_pages/layouts/location_page_layout.html', true);
     xmlhttp.send();
   }
 
@@ -31,7 +31,7 @@ function includeLayout() {
         addScript("/js/navbar.js");
       }
     };
-    xmlhttp.open('GET', 'http://localhost:8080/html_pages/layouts/navbar.html', true);
+    xmlhttp.open('GET', 'https://shreddedtogether.vercel.app/html_pages/layouts/navbar.html', true);
     xmlhttp.send();
   }
 
@@ -43,6 +43,6 @@ function includeLayout() {
         document.getElementById('footer-container').innerHTML = xmlhttp.responseText;
       }
     };
-    xmlhttp.open('GET', 'http://localhost:8080/html_pages/layouts/footer.html', true);
+    xmlhttp.open('GET', 'https://shreddedtogether.vercel.app/html_pages/layouts/footer.html', true);
     xmlhttp.send();
   }
