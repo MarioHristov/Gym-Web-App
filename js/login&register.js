@@ -70,7 +70,8 @@ function RegisterUser(formData) {
     })
       .then(response => {
         if (response.ok) {
-          console.log("User created. Login to proceed")
+          console.log("User created. Login to proceed");
+          window.location.reload();
         } else {
           throw new Error('Request failed with status: ' + response.status);
         }
