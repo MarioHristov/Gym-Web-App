@@ -11,20 +11,20 @@ const modal = document.getElementById('modal');
 var modalImage = document.getElementById('modal-image');
 
 var images = [
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_1.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_2.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_3.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_4.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_5.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_6.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_7.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_8.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_9.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_10.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_11.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_12.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_13.png',
-    'http://localhost:8080/gym_web_app_photos/image_gallery/gym_image_14.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_1.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_2.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_3.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_4.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_5.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_6.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_7.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_8.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_9.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_10.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_11.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_12.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_13.png',
+    'https://shreddedtogether.vercel.app/gym_web_app_photos/image_gallery/gym_image_14.png',
 ];
 var startIndex = 0;
 var imgCount = 3;
