@@ -28,10 +28,10 @@ function includeLayout() {
       if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
         // Inject the layout content into the page
         document.getElementById('navbar-container').innerHTML = xmlhttp.responseText;
-        addScript("/GymWebApp/js/navbar.js");
+        addScript("/js/navbar.js");
       }
     };
-    xmlhttp.open('GET', 'http://localhost:8080/GymWebApp/html_pages/layouts/navbar.html', true);
+    xmlhttp.open('GET', 'http://localhost:8080/html_pages/layouts/navbar.html', true);
     xmlhttp.send();
   }
 
@@ -43,6 +43,6 @@ function includeLayout() {
         document.getElementById('footer-container').innerHTML = xmlhttp.responseText;
       }
     };
-    xmlhttp.open('GET', 'http://localhost:8080/GymWebApp/html_pages/layouts/footer.html', true);
+    xmlhttp.open('GET', 'http://localhost:8080/html_pages/layouts/footer.html', true);
     xmlhttp.send();
   }
