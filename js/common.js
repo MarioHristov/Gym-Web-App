@@ -1,5 +1,5 @@
 function fillContent(pageId) {
-    document.getElementById('gallery-link').href = '/GymWebApp/html_pages/locations/'+ pageId.replace(/\s/g, "") + '.html#gallery';
+    document.getElementById('gallery-link').href = '/html_pages/locations/'+ pageId.replace(/\s/g, "") + '.html#gallery';
     document.querySelector('.gibberish-box h1').innerHTML = pageId ;
 }
 function addScript(src) {

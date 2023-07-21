@@ -7,10 +7,10 @@ function includeLayout() {
         
         // Call a function to fill the dynamic content for Page 1
         fillContent(document.title);
-        addScript('/GymWebApp/js/gallery.js');
+        addScript('/js/gallery.js');
       }
     };
-    xmlhttp.open('GET', 'http://localhost:8080/GymWebApp/html_pages/layouts/location_page_layout.html', true);
+    xmlhttp.open('GET', 'http://localhost:8080/html_pages/layouts/location_page_layout.html', true);
     xmlhttp.send();
   }
   // Call the function to include the layout file

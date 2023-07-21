@@ -45,7 +45,7 @@ async function initMap() {
     position: position,
     map: map,
     icon: {
-      url: '/GymWebApp/gym_web_app_photos/cluster1.png'
+      url: '/gym_web_app_photos/cluster1.png'
     },
     visible: map.getZoom() <= 8
   });
@@ -74,7 +74,7 @@ async function initMap() {
     var marker = new google.maps.Marker({
       position: place.location,
       map: map,
-      icon: '/GymWebApp/gym_web_app_photos/marker.png'
+      icon: '/gym_web_app_photos/marker.png'
     });
     var infoWindow = new google.maps.InfoWindow({
       content: `<div class='card'>${place.name}</div>`,
@@ -90,7 +90,7 @@ async function initMap() {
     });
 
     marker.addListener('click', function () {
-      window.location.href = '/GymWebApp/html_pages/locations/' + place.name.replace(/\s/g, "")+ '.html';
+      window.location.href = '/html_pages/locations/' + place.name.replace(/\s/g, "")+ '.html';
     });
 
     // Store the marker reference in the place object
